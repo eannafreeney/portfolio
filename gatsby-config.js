@@ -1,5 +1,10 @@
 module.exports = {
-  siteMetadata: {},
+  siteMetadata: {
+    title: `Eanna Freeney`,
+    description: `Portfolio Site`,
+    author: `Eanna Freeney`,
+    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+  },
   plugins: [
     `gatsby-plugin-mdx`,
     `gatsby-plugin-sharp`,
