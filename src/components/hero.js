@@ -13,9 +13,14 @@ const StyledSection = styled.section`
   }
   .subtitle {
     margin-top: 0;
-    width: 500px;
+
     margin: auto;
     line-height: 36px;
+  }
+  @media (min-width: 1200px) {
+    .subtitle {
+      width: 500px;
+    }
   }
   .highlighted {
     /* box-shadow: inset 0 -2.5rem 0 #cdf3e1; */

@@ -27,14 +27,12 @@ const GlobalStyle = createGlobalStyle`
         font-size: 2rem;
         line-height: 2.375rem;
         color: black;
-
     }
     h2 {
         font-weight: 700;
         font-size: 1.25rem;
         line-height: 1.5rem;
         color: black;
-
     }
     a {
         display: inline-block;
