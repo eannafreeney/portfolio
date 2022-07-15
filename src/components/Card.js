@@ -13,6 +13,12 @@ const CardItem = styled.article`
     opacity: 0.95;
     cursor: pointer;
   }
+  .card-link {
+    display: flex;
+  }
+  .card-img-container {
+    flex-grow: 1;
+  }
   .card-img {
     border-bottom: 1px solid #dae2ec;
     border-top-left-radius: 6px;
@@ -31,7 +37,7 @@ const CardItem = styled.article`
     margin: 16px 0 0;
   }
   .card-github-link {
-    margin: 0 0 12px;
+    margin: 16px 0;
     color: #969696;
   }
   .card-github-link:hover {
@@ -40,12 +46,13 @@ const CardItem = styled.article`
   .card-stack {
     display: flex;
     margin-bottom: 8px;
+    flex-wrap: wrap;
   }
   .card-stack span {
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-right: 8px;
+    margin: 16px 8px 0 0;
     font-size: 16px;
     background-color: #dae2ec;
     padding: 4px 8px;
@@ -60,7 +67,7 @@ const CardItem = styled.article`
 const Card = ({ title, slug, image, stack, description, github, url }) => {
   return (
     <CardItem>
-      <a href={url} target="_blank">
+      <a href={url} className="card-link" target="_blank">
         <GatsbyImage
           image={getImage(image)}
           alt={title}

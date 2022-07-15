@@ -9,6 +9,9 @@ const CardsContainer = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(368.6px, 1fr));
   gap: 32px;
   margin: 64px 0;
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(auto-fill, minmax(80%, 1fr));
+  }
 `
 
 const Cards = ({ cards }) => {

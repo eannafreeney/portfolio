@@ -3,46 +3,56 @@ import styled from "styled-components"
 
 const StyledFooter = styled.footer`
   width: 100%;
-  height: 6.25rem;
-  margin: 0 auto;
-  padding: 0 2.5rem;
+  padding: 32px 0;
   background: black;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: +1px;
   font-weight: 700;
   gap: 16px;
+
+  .footer-container {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: 900px) {
+      flex-direction: row;
+      gap: 16px;
+    }
+  }
 `
 
 const Footer = () => (
   <StyledFooter>
-    <div>
-      <span role="img" aria-label="emoji">
-        ✉️
-      </span>{" "}
-      eannafreeney [at] gmail [dot] com
+    <div className="footer-container">
+      <div>
+        <span role="img" aria-label="emoji">
+          ✉️
+        </span>{" "}
+        eannafreeney [at] gmail [dot] com
+      </div>
+      <div>
+        <span role="img" aria-label="emoji">
+          ☎️
+        </span>{" "}
+        +49 1764 2014 387
+      </div>
+      <a
+        href="https://github.com/eannafreeney"
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+        aria-label="External Link"
+      >
+        <span role="img" aria-label="emoji">
+          👏
+        </span>{" "}
+        Visit on GitHub
+      </a>
     </div>
-    <div>
-      <span role="img" aria-label="emoji">
-        ☎️
-      </span>{" "}
-      +49 1764 2014 387
-    </div>
-    <a
-      href="https://github.com/eannafreeney"
-      target="_blank"
-      rel="nofollow noopener noreferrer"
-      aria-label="External Link"
-    >
-      <span role="img" aria-label="emoji">
-        👏
-      </span>{" "}
-      Visit on GitHub
-    </a>
   </StyledFooter>
 )
 
