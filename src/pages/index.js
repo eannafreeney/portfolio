@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => {
 export const query = graphql`
   {
     projects: allAirtable(
-      filter: { table: { eq: "sites" }, data: { status: { eq: "active" } } }
+      filter: { table: { eq: "portfolio" }, data: { status: { eq: "active" } } }
       sort: { fields: data___date, order: DESC }
     ) {
       nodes {

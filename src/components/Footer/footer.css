@@ -4,6 +4,7 @@
   padding: 2rem 0;
   display: grid;
   place-items: center;
+  max-width: 90%;
 }
 .footer h4 {
   margin: 0;

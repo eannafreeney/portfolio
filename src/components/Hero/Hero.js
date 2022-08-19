@@ -3,24 +3,22 @@ import { Link } from "gatsby"
 // import heroImg from "../assets/images/hero.svg"
 import { StaticImage } from "gatsby-plugin-image"
 
+// styles
 import "./hero.css"
+import "./hero-animations.css"
 
 const Hero = () => {
   return (
     <header className="hero">
       <div className="hero__box">
-        <div className="hero__image-container">
-          <StaticImage
-            src="../../assets/images/profile.jpg"
-            className="hero__image"
-            alt="Eanna Freeney"
-          />
-        </div>
+        <StaticImage
+          src="../../assets/images/profile.jpg"
+          className="hero__image"
+          alt="Eanna Freeney"
+        />
         <h1 className="heading-primary">
           <span className="heading-primary--main">I'm Éanna</span>
-          <span className="heading-primary--sub">
-            I like building things for the web
-          </span>
+          <span className="heading-primary--sub">Building beautiful sites</span>
         </h1>
       </div>
     </header>
